@@ -1,5 +1,21 @@
 .card{
     width: 100% !important;
+    background-color: transparent;
+    border-color: turquoise;
+}
+
+.card:hover, .card-footer, .card-header{
+    background: turquoise;
+    color: black;
+}
+
+.card:hover ~ .list-group-item{
+    background: turquoise;
+    color: black;
+}
+
+ul .list-group-item{
+    background: transparent;
 }
 
 html{
@@ -12,4 +28,40 @@ footer{
     position: absolute;
     bottom: 0;
     width: 80%;
+}
+
+body{
+    background-color: black;
+    color: whitesmoke;
+}
+
+#select{
+    background-color: whitesmoke;
+    color: black;
+}
+
+#select:hover{
+    border-color: turquoise;
+}
+
+select option :hover{
+    border-color: turquoise !important;
+}
+
+select option{
+    border-color: transparent;
+}
+
+select option:not(:checked) { 
+    background-color: white; 
+    color:#000;
+}
+
+select option:is(:checked) { 
+    background-color: turquoise; 
+    color:#000;
+}
+
+.text-info{
+    color: turquoise !important;
 }
